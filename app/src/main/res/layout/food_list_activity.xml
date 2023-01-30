@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+    <TextView
+        android:id="@+id/txth1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/lobster"
+        android:text="Pizza Hut"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="33sp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/lobster"
+        android:text="hello explore your dream food"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginTop="60dp"/>
+
+    <GridView
+        android:id="@+id/gridViewF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:background="#C6C2C2"
+        android:backgroundTint="#E1E0E0"
+        android:columnWidth="120dp"
+        android:gravity="center"
+        android:numColumns="2" />
+
+</RelativeLayout>

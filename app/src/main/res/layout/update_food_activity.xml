@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageViewA"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="@drawable/foreground_design"
+        android:scaleType="centerCrop"
+        android:src="@drawable/admin_u_wp" />
+
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/lobster"
+        android:text="Update Item"
+        android:textAlignment="center"
+        android:textColor="#FF5353"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/txtUselect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/adamina"
+        android:text="Select the new image of pizza"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginTop="60dp"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageViewFood"
+        android:layout_marginTop="120dp"
+        />
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_marginLeft="50dp"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="240dp"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Price"
+        android:ems="10"
+        android:id="@+id/edtPrice"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_marginLeft="50dp"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="300dp"
+        />
+
+    <Button
+        android:text="Update"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnUpdate"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/edtPrice"
+        android:background="@drawable/btn_bg_design"
+        android:backgroundTint="#D1CDCE"
+        android:fontFamily="@font/calistoga"
+        android:textStyle="bold"
+        android:layout_marginLeft="100dp"/>
+
+
+</RelativeLayout>

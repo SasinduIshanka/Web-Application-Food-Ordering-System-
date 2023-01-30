@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Customer.Cus_login">
+
+
+    <ImageView
+        android:foreground="@drawable/foreground_design"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/w5"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:id="@id/text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/lobster"
+        android:text="Pizza Hut"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="33sp"
+        android:layout_marginTop="100dp"
+        />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/lobster"
+        android:text="Sign In"
+        android:textAlignment="center"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="20dp"
+        android:layout_marginTop="150dp"/>
+
+
+    <EditText
+        android:id="@+id/txtEmailL"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="444dp"
+        android:backgroundTint="#CCCCCC"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="13dp"
+        android:ems="10"
+        android:hint="Email Address"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/txtPasswordL"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="364dp"
+        android:backgroundTint="#CCCCCC"
+        android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+        android:drawablePadding="13dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnSignInL"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:background="@drawable/btn_bg_design"
+        android:backgroundTint="#F44336"
+        android:onClick="SignIn"
+        android:padding="14dp"
+        android:text="Sign In"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.743"
+        app:layout_constraintWidth_percent=".8" />
+
+    <TextView
+        android:id="@+id/txtAlreadyReg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/adamina"
+        android:text="Don't have an account ?"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginTop="700dp" />
+
+    <TextView
+        android:id="@+id/textSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/lobster"
+        android:text="Register"
+        android:onClick="Register"
+        android:textAlignment="center"
+        android:textColor="@color/purple_500"
+        android:textSize="15dp"
+        android:textStyle=""
+        android:layout_marginTop="700dp"
+        android:layout_marginLeft="230dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

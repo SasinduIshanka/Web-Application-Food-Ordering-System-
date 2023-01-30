@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.Admin_home"
+    >
+
+    <ImageView
+        android:id="@+id/imageViewA"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="@drawable/foreground_design"
+        android:scaleType="centerCrop"
+        android:src="@drawable/admin_wp2" />
+
+    <TextView
+        android:id="@+id/txth1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/lobster"
+        android:text="Pizza Hut"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="33sp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/lobster"
+        android:text="hello explore your dream food"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginTop="60dp"/>
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/lobster"
+        android:text="Add New Item"
+        android:textAlignment="center"
+        android:textColor="#FF5353"
+        android:textSize="20dp"
+        android:layout_marginTop="100dp"/>
+
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="150dp"
+        android:hint="Name"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"
+        android:layout_marginLeft="50dp"
+        />
+
+    <EditText
+        android:id="@+id/edtPrice"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:hint="Price"
+        android:layout_below="@+id/edtName"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/adamina"
+        android:text="Select the Image of pizza"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginTop="300dp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_below="@+id/edtPrice"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="50dp"
+        />
+
+    <Button
+        android:id="@+id/btnChoose"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_marginStart="29dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="45dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_toRightOf="@+id/imageView"
+        android:background="@drawable/btn_bg_design"
+        android:backgroundTint="#D83043"
+        android:fontFamily="@font/calistoga"
+        android:text="Choose image"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/btn_bg_design"
+        android:backgroundTint="#D1CDCE"
+        android:fontFamily="@font/calistoga"
+        android:text="Add Item"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btnList"
+        android:text="View Food List"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/btnAdd"
+        android:layout_alignLeft="@+id/btnAdd"
+        android:layout_alignStart="@+id/btnAdd"
+        android:background="@drawable/btn_bg_design"
+        android:backgroundTint="#D1CDCE"
+        android:fontFamily="@font/calistoga"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>
